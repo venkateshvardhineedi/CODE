@@ -1,0 +1,21 @@
+<form id="login" [formGroup]="userprofileForm" (ngSubmit)="loginUser()">
+    <label>
+        UserName:
+        <br>
+        <input type="text" formControlName="Username">
+    </label>
+    <br>
+    
+    <br>
+    <label>
+        password:
+        <br>
+        <input type="password" formControlName="Password">
+    </label>
+    <br>
+    <br>
+    <button   type="submit">Submit</button>
+    <p>New user ?</p>
+    <a  (click)="myClickFunction()" [routerLink]="['/register']">Register</a>
+    
+</form>
